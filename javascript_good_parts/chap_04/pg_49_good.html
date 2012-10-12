@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            // BETTER EXAMPLE
+            
+            // Make a function that assigns event handler functions to an array of nodes the right way.
+            // When you click on a node, an alert box will display the ordinal of the node.
+            
+            var add_the_handlers = function(nodes){
+                var i;
+                for (i = 0; i < nodes.length; i += 1) {
+                    nodes[i].onclick = function(i){
+                        return function(e){
+                            alert(e);
+                        };
+                    }(i);
+                }
+            };
+        </script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Heading di primo livello</h1>
+        <h2>Heading di scondo livello</h2>
+        <p>
+            un paragrafo giusto cosi
+        </p>
+        <p>
+            un altro paragrafo giusto cosi
+        </p>
+        <script type="text/javascript">
+            document.write("Hello World")
+        </script>
+        <noscript>
+            Your browser doesn't support or has disabled JavaScript
+        </noscript>
+    </body>
+</html>

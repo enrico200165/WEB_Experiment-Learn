@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Accessing form data</title>
+</head>
+<body>
+	<h1>Accessing Form Data</h1>
+<?php
+	echo "saluti";
+?> 
+	<form name="frmLogin"
+		onsubmit="alert(document.frmLogin.txtUsername.value)">
+		Username <input type="text" name="txtUsername" size=”12” /><br />
+		<br /> <input type="submit" value="Click here" />
+	</form>
+</body>
+</html>
