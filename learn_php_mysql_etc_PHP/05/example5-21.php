@@ -1,5 +1,7 @@
 <?php
-Translate::lookup();
+$o = new Translate();
+echo $o->lookup();
+echo $o->lookup2();
 
 class Translate
 {
@@ -7,11 +9,16 @@ class Translate
 	const SPANISH = 1;
 	const FRENCH  = 2;
 	const GERMAN  = 3;
-	// …
+	// ï¿½
 
 	function lookup()
 	{
 		echo self::SPANISH;
+	}
+	
+	function lookup2()
+	{
+		echo self::GERMAN;
 	}
 }
 ?>
