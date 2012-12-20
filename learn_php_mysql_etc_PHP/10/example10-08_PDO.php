@@ -4,9 +4,7 @@
 //       been amended to work correctly when deleting entries.
 
 require_once 'login.php';
-require_once 'ev_utils.php';
-
-
+require_once '../../EV_PHP_utils/ev_utils.php';
 
 try {
 	$dbh = new PDO("mysql:host=localhost;dbname=${db_database}", $db_username,$db_password);
