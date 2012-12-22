@@ -5,7 +5,7 @@ echo <<<_END
 		<title>Form Test</title>
 	</head>
 	<body>
-	<form method="post" action="formtest.php" />
+	<form method="post" action=basename(__FILE__) />
 		What is your name?
 		<input type="text" name="name" />
 		<input type="submit" />
