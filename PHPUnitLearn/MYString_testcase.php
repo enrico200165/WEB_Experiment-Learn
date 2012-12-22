@@ -1,16 +1,19 @@
 <?php
 
 require_once 'MYString.php';
-require_once 'PHPUnit.php';
+require_once "PHPUnit/Autoload.php";
 
-class MYStringTest extends PHPUnit_TestCase
+
+// class MYStringTest extends PHPUnit_TestCase
+
+class MYStringTest extends PHPUnit_Framework_TestCase
 {
 	// contains the object handle of the string class
 	var $abc;
 
 	// constructor of the test suite
 	function MYStringTest($name) {
-		$this->PHPUnit_TestCase($name);
+		parent::__construct($name);
 	}
 
 	// called before the test functions will be executed

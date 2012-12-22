@@ -1,10 +1,10 @@
 <?php
 
-require_once './MYString_testcase.php';
-require_once 'PHPUnit.php';
+require_once 'MYString_testcase.php';
+require_once "PHPUnit/Autoload.php";
 
-$suite  = new PHPUnit_TestSuite("MYStringTest");
-$result = PHPUnit::run($suite);
-
-echo $result -> toString();
+$suite  = new MYStringTest("MYStringTest");
+$result = new PHPUnit_Framework_TestResult(); 
+$suite->run($result);
+echo "fatto";
 ?> 
