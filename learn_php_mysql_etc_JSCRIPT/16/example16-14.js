@@ -1,4 +1,4 @@
-<script>
+//<script>
 numbers = []
 
 for (j=0 ; j<3 ; ++j)
@@ -13,4 +13,4 @@ document.write("<br />")
 document.write("Popped " + numbers.pop() + "<br />")
 document.write("Popped " + numbers.pop() + "<br />")
 document.write("Popped " + numbers.pop() + "<br />")
-</script>
+//</script>

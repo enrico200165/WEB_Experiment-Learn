@@ -1,4 +1,4 @@
-<script>
+//<script>
 checkerboard = Array(
 	Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
 	Array('o', ' ', 'o', ' ', 'o', ' ', 'o', ' '),
@@ -17,4 +17,4 @@ for (j = 0 ; j < 8 ; ++j)
 	document.write("<br />")
 }
 document.write("</pre>")
-</script>
+// </script>

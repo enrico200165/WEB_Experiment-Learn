@@ -1,4 +1,4 @@
-<script>
+//<script>
 // Alphabetical sort
 sports = ["Football", "Tennis", "Baseball", "Hockey"]
 sports.sort()
@@ -18,4 +18,4 @@ document.write(numbers + "<br />")
 numbers = [7, 23, 6, 74]
 numbers.sort(function(a,b){return b - a})
 document.write(numbers + "<br />")
-</script>
+//</script>

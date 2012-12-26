@@ -1,5 +1,6 @@
-<script>
-document.write(fixNames("the", "DALLAS", "CowBoys"))
+//<script>
+fixNames("the", "DALLAS", "CowBoys");
+print("Finito");
 
 function fixNames()
 {
@@ -11,4 +12,4 @@ function fixNames()
 	
 	return s.substr(0, s.length-1)
 }
-</script>
+//</script>
