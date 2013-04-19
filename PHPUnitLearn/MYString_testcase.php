@@ -1,10 +1,18 @@
 <?php
 
+/**
+ *
+ */
+
 require_once 'MYString.php';
 require_once "PHPUnit/Autoload.php";
 
 
-// class MYStringTest extends PHPUnit_TestCase
+/** class MYStringTest extends PHPUnit_TestCase
+ *
+ * @author enrico@gmail.com
+ *
+ */
 
 class MYStringTest extends PHPUnit_Framework_TestCase
 {

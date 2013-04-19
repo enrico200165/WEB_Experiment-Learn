@@ -1,0 +1,15 @@
+
+<span class="composite_kana">{{jpc1}}</span>  <span class="composite_romaji ">{{jpc1_kana}}</span></b><br>{{jpc1_mean}}<br><hr />
+<span style="font-size: 28px; color: #5500ff">{{jpc2}}</span>  <span style="color: #00aa00">{{jpc2_kana}}</span></b><br>{{jpc2_mean}}<br><hr />
+<span style="font-size: 28px; color: #5500ff">{{jpc3}}</span>  <span style="color: #00aa00">{{jpc3_kana}}</span></b><br>{{jpc3_mean}}<br><hr />
+<span style="font-size: 28px; color: #5500ff">{{jpc4}}</span>  <span style="color: #00aa00">{{jpc4_kana}}</span></b><br>{{jpc4_mean}}<br><hr />
+<span style="font-size: 28px; color: #5500ff">{{jpc5}}</span>  <span style="color: #00aa00">{{jpc5_kana}}</span></b><br>{{jpc5_mean}}<br><hr /> 
+
+
+
+user: {{Tags}}<br /> model: {{Type}} <br />cardM: {{Card}}
+
+
+
+style="font-size: 28px; color: #5500ff"
+

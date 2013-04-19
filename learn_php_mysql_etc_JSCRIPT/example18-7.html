@@ -1,30 +1,30 @@
-<html><head><title>AJAX Example</title>
-</head><body><center />
-<h1>Loading a web page into a DIV</h1>
+<html><head><title>AJAX XML Example</title>
+</head><body>
+<h2>Loading XML content into a DIV</h2>
 <div id='info'>This sentence will be replaced</div>
 <script>
 
-// The following line has been changed to a simpler URL that
-// will quickly display from within the div it is placed
-params = "url=amazon.com/gp/aw"
-
+nocache = "&nocache=" + Math.random() * 1000000
+url = "rss.news.yahoo.com/rss/topstories"
 request = new ajaxRequest()
-request.open("POST", "urlpost.php", true)
-request.setRequestHeader("Content-type",
-	"application/x-www-form-urlencoded")
-request.setRequestHeader("Content-length", params.length)
-request.setRequestHeader("Connection", "close")
-	
+request.open("GET", "xmlget.php?url=" + url + nocache, true)
+out = "";
+
 request.onreadystatechange = function()
 {
 	if (this.readyState == 4)
 	{
 		if (this.status == 200)
 		{
-			if (this.responseText != null)
+			if (this.responseXML != null)
 			{
-				document.getElementById('info').innerHTML =
-					this.responseText
+				titles = this.responseXML.getElementsByTagName('title')
+				
+				for (j = 0 ; j < titles.length ; ++j)
+				{
+					out += titles[j].childNodes[0].nodeValue + '<br />'
+				}
+				document.getElementById('info').innerHTML = out	
 			}
 			else alert("Ajax error: No data received")
 		}
@@ -32,7 +32,7 @@ request.onreadystatechange = function()
 	}
 }
 
-request.send(params)
+request.send(null)
 
 function ajaxRequest()
 {

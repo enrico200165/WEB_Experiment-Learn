@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<title>I ruoli della sicurezza</title>
+<link
+	href="http://shared.italy-safety-education.it/addons/lcms_scorm_player/templates/style/style_scormplayer.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="http://shared.italy-safety-education.it/addons/lcms_scorm_player/templates/player_scorm/default/def_style.css"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript"
+	src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/js/prototype.js"></script>
+<script type="text/javascript"
+	src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/js/ScormTypes.js"></script>
+<script type="text/javascript"
+	src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/js/ScormCache.js"></script>
+<script type="text/javascript"
+	src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/js/ScormApi.js"></script>
+<script type="text/javascript"
+	src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/js/ScormPlayer.js"></script>
+
+<script type="text/javascript"
+	src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/js/StdUIPlayer.js"></script>
+<script type="text/javascript">
+<!--
+	var playerConfig = {
+		autoplay : '1',
+		backurl : '',
+		xmlTreeUrl : 'http://www.italy-safety-education.it/it/fruizione-corsi/?sDo=wrapper&sFile=scormXmlTree.php&idscorm_organization=20&idReference=1',
+		host : 'www.italy-safety-education.it',
+		lms_url : 'http://www.italy-safety-education.it/it/fruizione-corsi/?sDo=wrapper&sFile=soaplms.php',
+		lms_base_url : 'http://www.italy-safety-education.it/it/fruizione-corsi/?sDo=wrapper&sFile=',
+		scormserviceid : 'urn:SOAPLMS',
+		scormVersion : '1.3',
+		idUser : '7941',
+		idReference : '1',
+		idscorm_organization : '20',
+		imagesPath : 'http://shared.italy-safety-education.it/addons/lcms_scorm_player/templates/images/scorm/',
+		idElemTree : 'treecontent',
+		idElemSco : 'scormbody',
+		idElemScoContent : 'scocontent',
+		idElemSeparator : 'separator',
+		showTree : true,
+		playertemplate : 'default',
+		auth_request : 'NON SERVE',
+		useWaitDialog : 'off',
+		startFromChapter : false,
+		bClearCache : false,
+		sSCOForAutoplay : '',
+		sCmiEntry : ''
+	};
+	window.onload = StdUIPlayer.initialize;
+// -->
+</script>
+</head>
+<body id="page_head" class="default" onunload="trackUnloadOnLms();">
+	<div
+		style="position: absolute; bottom: 0px; right: 0px; width: 100%; height: 34px; z-index: 10000; text-align: center; padding-top: 10px; background-color: #4B4B4B;">
+		<style>
+.normal_button[disabled] {
+	width: 180px;
+	height: 24px;
+	line-height: 24px;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #cccccc;
+	border: none;
+	background-color: #29547E;
+	background-image: -moz-linear-gradient(#3399cc, #3366cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #3399cc),
+		color-stop(1, #3366cc) );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.normal_button {
+	width: 180px;
+	height: 24px;
+	line-height: 24px;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	border: none;
+	background-color: #0099FF;
+	background-image: -moz-linear-gradient(#33FFFF, #0099FF);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #33FFFF),
+		color-stop(1, #0099FF) );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.exit_button {
+	width: 120px;
+	height: 24px;
+	line-height: 24px;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	border: none;
+	background-color: #FF0000;
+	background-image: -moz-linear-gradient(#FF9393, #FF0000);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #FF9393),
+		color-stop(1, #FF0000) );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+</style>
+		<input class="normal_button" type="button" id="UIbutton_sPrevious"
+			value="Precedente" onclick="javascript:previuosEvent();" disabled />&nbsp;&nbsp;&nbsp;<input
+			class="normal_button" type="button" id="UIbutton_sContinue"
+			value="Successivo" onclick="javascript:continueEvent();" disabled />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+			class="exit_button" type="button" id="UIbutton_sSuspendAll"
+			value="Esci"
+			onclick="javascript:window.uiPlayer.cntSco.location.replace('?sDo=wrapper&sFile=scorm_exit.php');" />
+	</div>
+	<div id="treecontent" class="treecontent default_menu"
+		style="z-index: 4000; height: 94%;">
+		<div class="menubox">INDICE DEI CONTENUTI</div>
+	</div>
+	<div id="separator" class="separator">
+		<a id="sep_command" href="#" onclick="showhidetree();"><img
+			src="http://shared.italy-safety-education.it/addons/lcms_scorm_player/templates/images/scorm/../scorm/bt_sx.png"
+			alt="Expand/Collapse" /></a>
+	</div>
+	<div id="scocontent" class="scocontent"
+		style="z-index: 5000; height: 95%;">
+		<iframe id="scormbody" name="scormbody" frameborder="0"
+			marginwidth="0" marginheight="0" framespacing="0" width="100%"
+			height="100%"></iframe>
+	</div>
+	<div
+		style="border: 0px; position: absolute; bottom: 5px; left: 5px; width: 230px; height: 28px; z-index: 200000;">
+		<iframe
+			src="http://www.italy-safety-education.it/it/fruizione-corsi/?sAction=keepalive"
+			style="width: 230px; height: 28px;" frameborder="0" marginwidth="0"
+			marginheight="0" framespacing="0"></iframe>
+	</div>
+	<script language="JavaScript">
+		/**
+		 * Porta allo SCO precedente.
+		 */
+
+		function previuosEvent() {
+			window.uiPlayer.treeonclick(window.sPreviousTarget);
+		}
+
+		/**
+		 * Porta allo SCO successivo.
+		 */
+
+		function continueEvent() {
+			if (!window.uiPlayer.treeonclick(window.sContinueTarget)) {
+				setTimeout("continueEvent()", 1000);
+			}
+		}
+
+		/**
+		 * Funzioni di uscita.
+		 */
+
+		function exitSco() {
+			window.uiPlayer.cntSco.location
+					.replace("?sDo=wrapper&sFile=scorm_exit.php");
+		}
+
+		function exitScoActive() {
+			window.uiPlayer.cntSco.location
+					.replace("?sDo=wrapper&sFile=scorm_exit.php&bActive=true");
+		}
+	</script>
+
+</body>
+</html>

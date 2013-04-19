@@ -134,6 +134,7 @@ function validateEmail(field) {
 
 </script></body> </html>
 _END
+;
 
 // Finally, here are the PHP functions
 

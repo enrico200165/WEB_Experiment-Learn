@@ -1,4 +1,8 @@
 <?php
+/**
+ * commento
+ */
+
 $j       = 23;
 $temp    = "Hello";
 $address = "1 Old Street";
