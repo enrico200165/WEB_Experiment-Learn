@@ -1,4 +1,3 @@
-<script>
 onerror = errorHandler
 document.writ("Welcome to this website") // Deliberate error
 
@@ -12,4 +11,3 @@ function errorHandler(message, url, line)
 	alert(out);
 	return true;
 }
-</script>
