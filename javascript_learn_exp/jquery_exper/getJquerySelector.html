@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("*").on("click", function(e) {
+          e.preventDefault();
+          var selector = $(this)
+            .parents()
+            .map(function() { return this.tagName; })
+            .get()
+            .reverse()
+            .concat([this.nodeName])
+            .join(">");
+
+          var id = $(this).attr("id");
+          if (id) { 
+            selector += "#"+ id;
+          }
+
+          var classNames = $(this).attr("class");
+          if (classNames) {
+            selector += "." + $.trim(classNames).replace(/\s/gi, ".");
+          }
+
+          alert(selector);
+      });
+    });
+    </script>
+</head>
+<body>
+<h1><span>I love</span> jQuery</h1>
+<div>
+  <p>It's the <strong>BEST THING</strong> ever</p>
+  <button id="myButton">Button test</button>
+</div>
+<ul>
+  <li>Item one
+    <ul>
+      <li id="sub2" >Sub one</li>
+      <li id="sub2" class="subitem otherclass">Sub two</li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h1, h2, p").click(function(event){
+        //alert(event.currentTarget === this);
+        console.log("event.target = "+event.target);
+        console.log(event.target);
+        console.log("event.currentTarget = "+event.currentTarget);
+        console.log(event.currentTarget);
+        return event.currentTarget;
+    });  
+});
+</script>
+</head>
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+<p><b>Note:</b> Click on each HTML element. The currentTarget is typically equal to "this", and will return "true".</p>
+
+</body>
+</html>
